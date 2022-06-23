@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>
         Bakery website
     </title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
@@ -23,20 +25,22 @@
     </div>
     <hr>
 
-    <img src="images/1.jpg" alt="Brownie" width="500px">
+    <img src="images/1.jpg" class="centerimg" alt="Brownie" width="500px">
     <h1>Introduction</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas nesciunt doloremque excepturi, iure temporibus suscipit soluta ducimus.<br>
-        <ul>
-            <li>Cakes</li>
-            <ol>
-                <li>Read Velvet Cake</li>
-                <li>Vanilla cake</li>
-                <li>Marble cake</li>
-            </ol>
-            <li>Breads</li>
-            <li>Beverages</li>
-        </ul>
+    <p style="background-color:aqua">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas nesciunt doloremque excepturi, iure temporibus suscipit soluta ducimus.<br>
         <br> Dolores libero quis culpa repellat expedita, itaque reprehenderit tempora aspernatur velit? Vitae, sapiente.</p>
+    <br>
+    <ul>
+        <li>Cakes</li>
+        <ol>
+            <li>Read Velvet Cake</li>
+            <li>Vanilla cake</li>
+            <li>Marble cake</li>
+        </ol>
+        <li>Breads</li>
+        <li>Beverages</li>
+    </ul>
+    <br>
     <figure>
         <img src="Images/2.jpg" alt="other" width="500px">
         <figcaption>Cake Photos</figcaption>
@@ -48,16 +52,25 @@
         <i class="fa-brands fa-instagram"></i>
     </a>
     <div>Contact Us</div>
-    <form action="#">
-        <label> Name:</label>
-        <input type="text" name="Name" placeholder="Your name">
-        <br>
-        <label> Email:</label>
-        <input type="email" name="Email" placeholder="Your email">
-        <br>
-        <textarea cols="30" rows="10" placeholder="Feedback"></textarea><br>
-        <input type="submit" name="Submit" value="Submit">
-    </form>
+    <div clas="formwrap">
+        <form>
+            <div class="pair">
+                <label> Name:</label>
+                <input type="text" name="Name" placeholder="Your name">
+
+            </div>
+            <div class="pair">
+                <label> Email:</label>
+                <input type="email" name="Email" placeholder="Your email">
+                <br>
+            </div>
+
+
+            <textarea class="feed" cols="30" rows="10" placeholder="Feedback"></textarea><br>
+            <input type="submit" class="sub" name="Submit" value="Submit">
+        </form>
+    </div>
+
 </body>
 
 </html>
