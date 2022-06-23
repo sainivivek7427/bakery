@@ -17,11 +17,9 @@
         }
         
         .container {
-            border: 2px solid red;
-            margin-top: 1em;
-            height: 850px;
             width: 100%;
             display: flex;
+            box-sizing: border-box;
             flex-wrap: wrap;
         }
         
@@ -47,12 +45,12 @@
             justify-content: flex-start;
         }
         
-        .child1 {
+        .nav-bar {
             padding-top: 0.7em;
-            margin-left: 45em;
+            margin-left: 45rem;
         }
         
-        .child1>a {
+        .nav-bar>a {
             padding-left: 10px;
             margin: 0.4em;
             text-decoration: none;
@@ -64,6 +62,7 @@
         }
         
         .para {
+            text-align: center;
             width: 100%;
             box-sizing: border-box;
             margin-left: 3em;
@@ -75,6 +74,126 @@
             background-color: black;
             margin-top: 1px;
         }
+        
+        .centerr {
+            display: flex;
+            width: 900px;
+            height: 600px;
+            object-fit: cover;
+            box-sizing: border-box;
+        }
+        
+        .imgg {
+            width: 100%;
+            height: 600px;
+        }
+        
+        .offer {
+            text-align: center;
+            margin-top: 1em;
+        }
+        
+        .sub {
+            width: 15rem;
+            height: 2rem;
+            background-color: black;
+            color: red;
+            border-radius: 1rem;
+            margin-left: 5em;
+        }
+        
+        .footer {
+            background-color: palevioletred;
+            margin-top: 1.4em;
+            width: 100%;
+            color: black;
+            margin-left: 0.3em;
+        }
+        
+        .entry {
+            background-color: black;
+            color: white;
+            width: 15rem
+        }
+        
+        .feed {
+            width: 20rem;
+            height: 12rem;
+            margin-left: 3.5rem;
+        }
+        
+        .pair {
+            margin-left: 1em;
+        }
+        
+        .contact {
+            text-align: center;
+        }
+        
+        .review {
+            text-align: start;
+            margin-left: 1em;
+            margin-top: 1em;
+            box-sizing: border-box;
+        }
+        
+        .review1 {
+            text-align: center;
+            margin-top: 1.5em;
+        }
+        
+        @media screen and (max-width:768px) {
+            .head {
+                width: 100%;
+            }
+            .centerr {
+                width: 100%;
+                margin-left: 0px;
+                margin-top: 2em;
+            }
+            .imgg {
+                width: 100%;
+            }
+            .nav-bar {
+                margin-left: 2.5rem;
+            }
+            .container {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .centerr {
+                width: 100%;
+                margin-left: 0px;
+                margin-top: 3em;
+            }
+            .para {
+                text-align: left;
+                box-sizing: content-box;
+                margin-left: 0;
+            }
+            .nav-bar>a:hover {
+                background-color: yellow;
+                border-radius: 7px;
+            }
+            .footer {
+                text-align: left;
+            }
+        }
+        
+        @media screen and (min-width:769px) {
+            .head {
+                width: 100%;
+            }
+            .centerr {
+                width: 800px;
+                margin-left: 11em;
+                margin-top: 3em;
+            }
+            .footer {
+                text-align: center;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -83,15 +202,21 @@
         <div>
             <h1 class="intro">Introduction</h1>
         </div>
-        <div class="child1">
+        <div class="nav-bar">
             <a href="#"> Home</a>
             <a href="#">Contact us</a>
             <a href="#"> Service</a>
         </div>
 
     </div>
+    <div class="centerr">
+        <img class="imgg" src="/Images/6.jpg" alt="other">
+    </div>
     <div class="para">
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus ex quibusdam accusamus distinctio <br> dolorem, facilis molestiae, voluptate rerum veritatis illum fugiat totam perspiciatis dolore suscipit labore repellat laboriosam atque?</p>
+    </div>
+    <div class="offer">
+        <h3>Offerings</h3>
     </div>
     <div class="container">
 
@@ -155,6 +280,35 @@
             <figure><img src="/Images/3.jpg" alt="other">
                 <figcaption class="red">cake</figcaption>
             </figure>
+        </div>
+    </div>
+    <div class="review">
+        <h3 class="review1">Review From Customer....</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut nobis cum repellat facere ea labore officiis laborum eligendi ab dolores.</p>
+    </div>
+    <div class="footer">
+        <div>
+            <h3 class="contact">Contact Us</h2>
+        </div>
+        <div clas="formwrap">
+            <form>
+                <div class="pair">
+                    <label> Name:</label>
+                    <input type="text" class="entry" name="Name" placeholder="Your name">
+
+                </div>
+                <br>
+                <div class="pair">
+                    <label> Email:</label>
+                    <input type="email" class="entry" name="Email" placeholder="Your email">
+                    <br>
+                </div>
+                <br>
+
+                <textarea class="feed" cols="30" rows="10" placeholder="Feedback"></textarea><br>
+                <input type="submit" class="sub" name="Submit" value="Submit">
+            </form>
         </div>
     </div>
 
