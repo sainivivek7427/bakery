@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        body .container {
+            border: 1px solid red;
+            height: 900px;
+            width: 700px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .child {
+            border: 2px solid grey;
+            width: 200px;
+            height: 200px;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .parent {
+            justify-content: flex-start;
+            padding-left: 10px;
+        }
+        
+        .childd {
+            display: flex;
+            background-color: aqua;
+            justify-content: end;
+        }
+        
+        span>a {
+            padding-left: 10px;
+            margin: 0.4em;
+            text-decoration: none;
+            color: red;
+        }
+        
+        .intro {
+            color: red;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="parent">
+        <span class="childd">
+            <h1 class="intro">Introduction</h1>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Service</a>
+    
+        </span>
+
+    </span>
+    <div class="container">
+        <div class="child"><img src="/Images/1.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/1.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/1.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/4.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/5.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/6.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/3.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/4.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/5.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/6.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/3.jpg" alt="other"></div>
+        <div class="child"><img src="/Images/3.jpg" alt="other"></div>
+    </div>
+</body>
+
+</html>
