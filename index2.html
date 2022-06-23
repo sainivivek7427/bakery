@@ -16,38 +16,43 @@
             flex-direction: column;
         }
         
-        body .container {
-            border: 1px solid red;
-            height: 900px;
-            width: 700px;
+        .container {
+            border: 2px solid red;
+            margin-top: 1em;
+            height: 850px;
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
         }
         
         .child {
             border: 2px solid grey;
-            width: 200px;
-            height: 200px;
+            width: 295px;
+            height: 210px;
         }
         
         img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
+            width: 295px;
+            height: 210px;
         }
         
-        .parent {
-            justify-content: flex-start;
-            padding-left: 10px;
-        }
-        
-        .childd {
+        .head {
             display: flex;
-            background-color: aqua;
-            justify-content: end;
+            flex-direction: row;
+            position: fixed;
+            width: 100%;
+            background-color: black;
+            color: aliceblue;
+            height: 7%;
+            justify-content: flex-start;
         }
         
-        span>a {
+        .child1 {
+            padding-top: 0.7em;
+            margin-left: 45em;
+        }
+        
+        .child1>a {
             padding-left: 10px;
             margin: 0.4em;
             text-decoration: none;
@@ -55,38 +60,104 @@
         }
         
         .intro {
+            padding-left: 1em;
+        }
+        
+        .para {
+            width: 100%;
+            box-sizing: border-box;
+            margin-left: 3em;
+            margin-top: 3.0em;
+        }
+        
+        .red {
             color: red;
-            display: flex;
-            justify-content: center;
+            background-color: black;
+            margin-top: 1px;
         }
     </style>
 </head>
 
 <body>
-    <span class="parent">
-        <span class="childd">
+    <div class="head">
+        <div>
             <h1 class="intro">Introduction</h1>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Service</a>
-    
-        </span>
+        </div>
+        <div class="child1">
+            <a href="#"> Home</a>
+            <a href="#">Contact us</a>
+            <a href="#"> Service</a>
+        </div>
 
-    </span>
-    <div class="container">
-        <div class="child"><img src="/Images/1.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/1.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/1.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/4.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/5.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/6.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/3.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/4.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/5.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/6.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/3.jpg" alt="other"></div>
-        <div class="child"><img src="/Images/3.jpg" alt="other"></div>
     </div>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus ex quibusdam accusamus distinctio <br> dolorem, facilis molestiae, voluptate rerum veritatis illum fugiat totam perspiciatis dolore suscipit labore repellat laboriosam atque?</p>
+    </div>
+    <div class="container">
+
+        <div class="child">
+            <figure><img src="/Images/1.jpg" alt="other">
+                <figcaption class="red">RED CHERRY</figcaption>
+            </figure>
+        </div>
+
+        <div class="child">
+            <figure><img src="/Images/1.jpg" alt="other">
+                <figcaption class="red">cake</figcaption>
+            </figure>
+        </div>
+        <div class="child">
+            <figure><img src="/Images/1.jpg" alt="other">
+                <figcaption class="red">cake</figcaption>
+            </figure>
+        </div>
+        <div class="child">
+            <figure><img src="/Images/1.jpg" alt="other">
+                <figcaption class="red">cake</figcaption>
+            </figure>
+        </div>
+        <div class="child">
+            <figure><img src="/Images/5.jpg" alt="other">
+                <figcaption class="red">Red Cherry</figcaption>
+            </figure>
+        </div>
+        <div class="child">
+            <figure><img src="/Images/6.jpg" alt="other">
+                <figcaption class="red">cake</figcaption>
+            </figure>
+        </div>
+        <div class="child">
+            <figure><img src="/Images/4.jpg" alt="other">
+                <figcaption class="red">cake</figcaption>
+            </figure>
+        </div>
+        <div class="child">
+            <figure><img src="/Images/4.jpg" alt="other">
+                <figcaption class="red">cake</figcaption>
+            </figure>
+        </div>
+        <div class="child">
+            <figure><img src="/Images/5.jpg" alt="other">
+                <figcaption class="red">cake</figcaption>
+            </figure>
+        </div>
+        <div class="child">
+            <figure><img src="/Images/6.jpg" alt="other">
+                <figcaption class="red">cake</figcaption>
+            </figure>
+        </div>
+        <div class="child">
+            <figure><img src="/Images/3.jpg" alt="other">
+                <figcaption class="red">cake</figcaption>
+            </figure>
+        </div>
+        <div class="child">
+            <figure><img src="/Images/3.jpg" alt="other">
+                <figcaption class="red">cake</figcaption>
+            </figure>
+        </div>
+    </div>
+
 </body>
 
 </html>
